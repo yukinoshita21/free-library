@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom library</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tambahkan konfigurasi Firebase di sini -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      
+        // Your web app's Firebase configuration
+      
+        const firebaseConfig = {
+      
+          apiKey: "AIzaSyCkmsWJPL9YCbBTKLFownVHYnH1whYkX68",
+      
+          authDomain: "free-init-library.firebaseapp.com",
+      
+          projectId: "free-init-library",
+      
+          storageBucket: "free-init-library.appspot.com",
+      
+          messagingSenderId: "1037182111020",
+      
+          appId: "1:1037182111020:web:6f688a01c4adbf9c117089"
+      
+        };
+      
+      
+        // Initialize Firebase
+      
+        const app = initializeApp(firebaseConfig);
+      
+      </script>
+</head>
+<body>
+    <!-- kontainer1 -->
+    <div class="kontainer">
+        <h1>Freedom library</h1>
+        <img src="freedom.jpg" alt="" class="imgheader">
+        <div class="info">
+            <div class="item">
+                <h3>Various book</h3>
+                <img src="./icon/book_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p>Tersedia beragam buku dengan berbagai topik dan genre yang bisa anda download</p>
+            </div>
+            <div class="item">
+                <h3>Free</h3>
+                <img src="./icon/money_off_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p>
+                    Beragam buku yang tersedia disini bisa didownload dan di baca secara gratis
+                </p>
+            </div>
+            <div class="item">
+                <h3>Interconnections</h3>
+                <img src="./icon/public_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p>
+                    Tetaplah terhubung bersama dan membangun komunitas yang positif dan bersama kita membangun ruang publik 
+                </p>
+            </div>
+        </div>
+        <div class="about">
+            <img src="readcho.jpg" alt="read">
+            <p>
+                Selamat datang di <i>freedom library</i> ini adalah sebuah tempat dimana anda bisa bebas mendownload beragam bahan bacaan yang menarik secara gratis dan mudah dijangkau. Kami percaya dengan adanya perpustakaan bebas ini dapat membantu memajukan peradaban menuju arah yang positif.
+            </p>
+        </div>
+    </div>
+    <!-- kontainer1 -->
+
+     <!-- kontainer2 -->
+    <div class="kontainer2">
+        <div class="book-container">
+            <div class="book">
+                <img src="inferno.jpg" alt="Book 1">
+                <h2>Inferno</h2>
+                <p>Dante aligheri</p>
+                <a href="book1.pdf" download>Download</a>
+            </div>
+            <div class="book">
+                <img src="zara.jpeg" alt="Book 2">
+                <h2>Those spoke of zarathustra</h2>
+                <p>Fredrich nietzsche</p>
+                <a href="book2.pdf" download>Download</a>
+            </div>
+            <div class="book">
+                <img src="1984.jpg" alt="Book 2">
+                <h2>1984</h2>
+                <p>George orwell</p>
+                <a href="book2.pdf" download>Download</a>
+            </div>            
+    </div>
+    </div>
+    <!-- kontainer2 -->
+     <!-- kontainer3 -->
+     <div class="kontainer3">
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept=".pdf,.epub" required>
+            <input type="submit" value="Unggah">
+        </form>
+        
+     </div>
+     <!-- kontainer3 -->
+     <script src="script.js"></script>
+     <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-storage.js"></script>
+
+</body>
+</html>
